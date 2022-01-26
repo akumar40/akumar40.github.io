@@ -1,0 +1,44 @@
+<app-navigation-bar></app-navigation-bar>
+<div>
+  <div class="overlay"></div>
+
+  <div class="container row welcome-page">
+    <div class="col-md-6">
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted">
+        <source src="../../assets/img/Avinash Kumar.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="col-md-6">
+      <img src="../../assets/img/Avinash-Kumar.jpg" height="500px" />
+    </div>
+  </div>
+  <div class="container pt-4 pl-3 welcome-page" style="background-color: beige;">
+    <div><h1> Work Experience </h1></div>
+    <div class="row pt-3 pb-3 col-md-12 d-block img-fluid">
+        <div id="workExp" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#workExp" data-slide-to="0" [ngClass]="firstLogoActive == true ? 'active' : ''"></li>
+              <li data-target="#workExp" data-slide-to="1" [ngClass]="firstLogoActive == false ? 'active' : ''"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item carousel-bgcolor" [ngClass]="firstLogoActive == true ? 'active' : ''">
+                <img class="d-block rounded mx-auto" style="padding-top: 20px;" src="../../assets/img/EYLogo.png" height="200px">
+                
+              </div>
+              <div class="carousel-item carousel-bgcolor" [ngClass]="firstLogoActive == false ? 'active' : ''">
+                <img class="d-block rounded mx-auto" style="padding-top: 20px;" src="../../assets/img/FAILogo.jpg" height="200px">
+                
+              </div>
+            </div>
+            <a class="carousel-control-prev" role="button" data-slide="prev" (click)="invertLogo()">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" role="button" data-slide="next" (click)="invertLogo()">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
+  </div>
+</div>

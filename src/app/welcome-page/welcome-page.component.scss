@@ -1,0 +1,21 @@
+.welcome-page {
+  padding-left: 0px;
+  margin-left: 2px;
+}
+
+.welcome-message {
+  animation: animtext 4s steps(80, end);
+  transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+@keyframes animtext {
+  from {
+    width: 0;
+    transition: all 2s ease-in-out;
+  }
+}
+
+.carousel-bgcolor {
+    background-color: burlywood;
+    height: 300px;
+}
